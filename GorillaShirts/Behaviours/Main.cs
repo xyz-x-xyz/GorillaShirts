@@ -135,7 +135,7 @@ namespace GorillaShirts.Behaviours
 
         public async void Start()
         {
-            var requestVersion = UnityWebRequest.Get(@"https://raw.githubusercontent.com/developer9998/GorillaShirts/main/Version.txt");
+            var requestVersion = UnityWebRequest.Get(@"https://raw.githubusercontent.com/xyz-x-xyz/GorillaShirts/main/Version.txt");
             await TaskYieldUtils.Yield(requestVersion);
 
             if (requestVersion.result != UnityWebRequest.Result.Success)
